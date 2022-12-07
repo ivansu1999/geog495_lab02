@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Distribution and habitat</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .accordion {
+          background-color: #eee;
+          color: #444;
+          cursor: pointer;
+          padding: 18px;
+          width: 100%;
+          border: none;
+          text-align: left;
+          outline: none;
+          font-size: 15px;
+          transition: 0.4s;
+        }
+        
+        .active, .accordion:hover {
+          background-color: #ccc; 
+        }
+        
+        .panel {
+          padding: 0 18px;
+          display: none;
+          background-color: white;
+          overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="topnav" id="myTopnav">
+        <a href="index.html">Abstract</a>
+        <a href="section1.html">Description</a>
+        <a class="active" href="section2.html">Distribution</a>
+        <a href="section3.html">Ecosystems</a>
+        <a href="see_also.html">See Also</a>
+        <a href="references.html">References</a>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+<!-- Page content -->
+<button class="accordion">Part 1</button>
+    <div class="panel">
+        <p>Sea turtles can be found in all oceans except for the polar regions. The flatback sea turtle is found solely on the northern coast of Australia. The Kemp's ridley sea turtle is found solely in the Gulf of Mexico and along the East Coast of the United States.</p>
+    </div>
+
+<button class="accordion">Part 2</button>
+    <div class="panel">
+        <p>Sea turtles are generally found in the waters over continental shelves. During the first three to five years of life, sea turtles spend most of their time in the pelagic zone floating in seaweed mats. Green sea turtles in particular are often found in Sargassum mats, in which they find food, shelter and water. Once the sea turtle has reached adulthood it moves closer to the shore. Females will come ashore to lay their eggs on sandy beaches during the nesting season.</p>
+    </div>
+
+<button class="accordion">Part 3</button>
+    <div class="panel">
+    <p>Sea turtles migrate to reach their spawning beaches, which are limited in numbers. Living in the ocean therefore means they usually migrate over large distances. All sea turtles have large body sizes, which is helpful for moving large distances. Large body sizes also offer good protection against the large predators (notably sharks) found in the ocean.</p>
+    </div>
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+       }
+  });
+    }
+ </script>
+</body>
+</html>

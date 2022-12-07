@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sea turtle</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    body {font-family: Arial, Helvetica, sans-serif;}
+    
+    /* Full-width input fields */
+    input[type=text], input[type=password] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+    
+    /* Set a style for all buttons */
+    button {
+      background-color: #04AA6D;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+    }
+    
+    button:hover {
+      opacity: 0.8;
+    }
+    
+    /* Extra styles for the cancel button */
+    .cancelbtn {
+      width: auto;
+      padding: 10px 18px;
+      background-color: #f44336;
+    }
+    
+    /* Center the image and position the close button */
+    .imgcontainer {
+      text-align: center;
+      margin: 24px 0 12px 0;
+      position: relative;
+    }
+    
+    img.avatar {
+      width: 40%;
+      border-radius: 50%;
+    }
+    
+    .container {
+      padding: 16px;
+    }
+    
+    span.psw {
+      float: right;
+      padding-top: 16px;
+    }
+    
+    /* The Modal (background) */
+    .modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+      padding-top: 60px;
+    }
+    
+    /* Modal Content/Box */
+    .modal-content {
+      background-color: #fefefe;
+      margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+      border: 1px solid #888;
+      width: 80%; /* Could be more or less, depending on screen size */
+    }
+    
+    /* The Close Button (x) */
+    .close {
+      position: absolute;
+      right: 25px;
+      top: 0;
+      color: #000;
+      font-size: 35px;
+      font-weight: bold;
+    }
+    
+    .close:hover,
+    .close:focus {
+      color: red;
+      cursor: pointer;
+    }
+    
+    /* Add Zoom Animation */
+    .animate {
+      -webkit-animation: animatezoom 0.6s;
+      animation: animatezoom 0.6s
+    }
+    
+    @-webkit-keyframes animatezoom {
+      from {-webkit-transform: scale(0)} 
+      to {-webkit-transform: scale(1)}
+    }
+      
+    @keyframes animatezoom {
+      from {transform: scale(0)} 
+      to {transform: scale(1)}
+    }
+    
+    /* Change styles for span and cancel button on extra small screens */
+    @media screen and (max-width: 300px) {
+      span.psw {
+         display: block;
+         float: none;
+      }
+      .cancelbtn {
+         width: 100%;
+      }
+    }
+    </style>
+</head>
+
+<body>
+
+    <div class="topnav" id="myTopnav">
+        <a class="active" href="index.html">Abstract</a>
+        <a href="section1.html">Description</a>
+        <a href="section2.html">Distribution</a>
+        <a href="section3.html">Ecosystems</a>
+        <a href="see_also.html">See Also</a>
+        <a href="references.html">References</a>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <!-- Page content -->
+    <div class="content">
+        <br>
+        <h1>Sea turtle:</h1>
+        <br>
+        <br>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Chelonia_mydas_is_going_for_the_air_edit.jpg/440px-Chelonia_mydas_is_going_for_the_air_edit.jpg">
+        <br>
+        <br>
+        Sea turtles (superfamily Chelonioidea), sometimes called marine turtles, are reptiles of the order:Testudines and of the suborder Cryptodira. The seven existing species of sea turtles are the:
+        <br>
+        <br>
+        flatback,
+        <br>
+        green,
+        <br>
+        hawksbill,
+        <br>
+        leatherback,
+        <br>
+        loggerhead,
+        <br>
+        Kemp's ridley,
+        <br>
+        olive ridley
+        <br>
+        <br>
+        All six of the sea turtle species present in US waters (all of those listed above except the flatback) are listed as endangered and/or threatened under the Endangered Species Act. The seventh sea turtle species is the flatback, which exists in the waters of Australia, Papua New Guinea and Indonesia. Sea turtles can be separated into the categories of hard-shelled (cheloniid) and leathery-shelled (dermochelyid). There is only one dermochelyid species which is the leatherback sea turtle.
+    </div>
+
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+    
+    <div id="id01" class="modal">
+      
+      <form class="modal-content animate" action="/action_page.php" method="post">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <img src="data:image/png;base64,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" alt="sea turtle" class="avatar">
+        </div>
+    
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+    
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+            
+          <button type="submit">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+    
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+    </div>
+    
+    <script>
+    // Get the modal
+    var modal = document.getElementById('id01');
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    </script>   
+
+</body>
+
+</html>
